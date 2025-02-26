@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.35rem;
+    min-height: 100vh;
+}
+
+button {
+    font-size: 0.8em;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #0047AB;
+    color: white;
+    font-weight: bold;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(35, 35, 204)
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.grid-container > *{
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.grid-container {
+    display: grid;
+    grid-template: 
+    "header" 
+    "navbar" 
+    "main" 
+    "footer";
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.65em;
+    font-weight: bold;
+    color: #0047AB;
+    background-color: rgb(245, 245, 245);
+}
+
+
+.header p {
+    margin-top: 20px;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.navbar a {
+    padding: 5px;
+}
+
+.navbar a:hover {
+    color: #0047AB;
+}
+
+.main {
+    grid-area: main;
+    padding: 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(/images/20757.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero h1 {
+    margin-top: 10px;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hero button {
+    font-size: 1.1em;
+    margin-top: 55px;
+    padding: 10px 15px;
+}
+
+.cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px;
+    background-color: rgb(30,30,30);
+    box-shadow: 10px 6px 50px -10px rgba(0,0,0,0.4); 
+    color: white;
+}
+
+.curso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 96%;
+    height: 22vh;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 10px 6px 37px -13px rgba(51,51,51,0.74);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.curso p {
+    display: none;
+}
+
+.curso button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 0.75em;
+}
+
+.curso:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(/images/Experta-en-uno-de-los-lenguajes-de-programacion-mas-demandados.webp);
+}
+
+.curso:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(/images/premium_photo-1663040543387-cb7c78c4f012.jpg);
+}
+
+.curso:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(/images/img3.webp);
+}
+
+.curso:nth-child(4) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(/images/img4.jpg);
+}
+
+.curso:nth-child(5) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(/images/img5.jpg);
+}
+
+.curso:last-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(/images/img6.avif);
+}
+
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+}
+
+.nosotros .imagen {
+    display: none;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+    transition: transform 0.5s ease;
+}
+
+.info:hover {
+    transform: scale(1.1);
+}
+
+.info p {
+    margin-top: 10px;
+}
+
+.info img {
+    width: 15%;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background-color: rgb(245, 245, 245);
+    height: 60vh;
+}
+
+.contacto h2 {
+    color: #0047AB;
+    padding: 30px 30px;
+}
+
+.contacto label {
+    display: block;
+    font-size: 1rem;
+    color: #272626;
+    margin-bottom: 8px;
+}
+  
+.contacto input,
+.contacto textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+}
+  
+.contacto input:focus,
+.contacto textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.contacto button {
+    margin-bottom: 30px;
+}
+
+.campo {
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    background-color: rgb(30,30,30);
+    align-items: self-start;
+    color: white;
+    font-size: 0.7em;
+    padding: 8px 5px;
+} 
