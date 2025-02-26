@@ -299,7 +299,118 @@ a {
     display: flex;
     background-color: rgb(30,30,30);
     align-items: self-start;
-    color: white;
+    color: rgb(209, 203, 203);
     font-size: 0.7em;
     padding: 8px 5px;
 } 
+
+@media (min-width: 1024px) {
+    .grid-container {
+        display: grid;
+        grid-template: 
+        "header navbar" 50px
+        "main main" auto
+        "footer footer" 30px
+        ;
+    }
+
+
+    .header {
+        justify-content: flex-start;
+    }
+
+
+    .header p {
+        margin-bottom: 20px;
+        margin-left: 30px;
+        font-size: 0.9em;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 0.70em;
+        margin-right: -220px;
+    }
+
+    .navbar a {
+        margin: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .hero {
+        height: 100vh;
+    }
+
+    .nosotros {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100vh;
+    }
+
+    .nosotros .imagen{
+        display: flex;
+        margin-left: 100px;
+    }
+
+    .imagen img {
+        width: 500px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .informacion {
+        margin-left: 100px;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: row;
+        padding: 30px 70px;
+    }
+
+    .info:first-child {
+        margin-right: -350px;
+    }
+
+    .info:nth-child(2) {
+        margin-right: -280px;
+    }
+
+    .info:last-child img{
+        width: 15%;
+    }
+
+    .info img {
+        margin: 13px;
+        width: 10%;
+    }
+
+    .cursos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 150vh;
+    }
+
+    .curso {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 450px;
+        width: 400px;
+        margin-left: 50px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .curso p {
+        display: block;
+        font-size: 0.75em;
+        text-align: center;
+        width: 300px;
+    }    
+}
