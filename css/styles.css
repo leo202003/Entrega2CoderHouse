@@ -414,4 +414,9 @@ a {
         text-align: center;
         width: 300px;
     }    
+
+    .curso button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
 }
