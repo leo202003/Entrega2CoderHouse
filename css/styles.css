@@ -457,14 +457,21 @@ a {
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .unidad:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    background-color: #0047AB; 
 }
 
 .unidad p {
     color: #0047AB;
+    transition: color 0.5s ease;
+}
+
+.unidad:hover p{
+    color: rgb(245, 245, 245);
 }
 
 .informacion-materia {
@@ -490,13 +497,21 @@ a {
         height: 30vh;
     }
 
-    .programa {
-        height: 110vh;
+
+    .unidades {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         background-color: rgb(245, 245, 245);
     }
 
     .unidad {
-        width: 30%;
+        width: 50%;
+        place-self: center;
+        padding: 150px 150px;
+        text-align: center;
+        font-size: 0.9;
+        white-space: nowrap;
     }
+
 }
 
