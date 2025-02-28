@@ -224,17 +224,20 @@ a {
     display: none;
 }
 
+.informacion {
+    overflow: hidden;
+}
+
 .info {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 20px;
-    transition: transform 0.5s ease;
+    transition: transform 0.4s ease-in-out;
     text-align: center;
 }
 
 .info:hover {
-    transform: scale(1.1);
+    transform: scale(1.1) ;
 }
 
 .info p {
@@ -323,7 +326,7 @@ a {
 
     .header p {
         margin-bottom: 20px;
-        margin-left: 30px;
+        margin-left: 55px;
         font-size: 0.9em;
     }
 
@@ -331,9 +334,9 @@ a {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: flex-end;
         font-size: 0.70em;
-        margin-right: -220px;
-        max-width: 100%;
+        
     }
 
     .navbar a {
@@ -348,7 +351,7 @@ a {
 
     .nosotros {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         height: 100vh;
     }
 
@@ -363,19 +366,29 @@ a {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
+
+    .informacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+    }
+
     .info{
         display: flex;
         flex-direction: row;
-        padding: 30px 70px;
+        align-items: center;
         margin-left: 100px;
+        margin-bottom: 50px;
+        text-align: center;
     }
 
-    .info:first-child {
-        margin-right: -350px;
+    .info:first-child img{
+        width: 15%;
     }
 
-    .info:nth-child(2) {
-        margin-right: -280px;
+    .info:nth-child(2) img{
+        width: 13%;
     }
 
     .info:last-child img{
@@ -384,7 +397,6 @@ a {
 
     .info img {
         margin: 13px;
-        width: 10%;
     }
 
     .cursos {
