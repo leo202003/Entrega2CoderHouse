@@ -6,48 +6,64 @@
     <link rel="stylesheet" href="/css/styles.css">
     <title>CodiGo</title>
 </head>
-<body>
+<body class="grid-container">
     <header class="header">
         <p class="logo">CodiGo</p>
     </header>
 
     <nav class="navbar">
-        <a href="#hero">Volver al Inicio</a>
+        <a href="/index.html">Volver al inicio</a>
     </nav>
 
     <main class="main">
-        <h1>Programa del curso</h1>
+        <section class="hero" id="hero" style="background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/Experta-en-uno-de-los-lenguajes-de-programacion-mas-demandados.webp); background-position: right;">
+            <h1>Programación <br> Frontend</h1>
+            <a href="#unidades">
+                <button>Unidades</button>
+            </a>
+        </section>
 
-        <section class="unidades">
-            <div class="unidad">
-                <p>+ Unidad 1</p>
-            </div>
-            <div class="unidad">
-                <p>+ Unidad 2</p>
-            </div>
-            <div class="unidad">
-                <p>+ Unidad 3</p>
-            </div>
-            <div class="unidad">
-                <p>+ Unidad 4</p>
+        <section class="programa">
+            <img src="/images/unidad-img.gif" alt="">
+            <div class="unidades" id="unidades">
+                <div class="unidad">
+                    <p>+ Unidad 1</p>
+                </div>
+                <div class="unidad">
+                    <p>+ Unidad 2</p>
+                </div>
+                <div class="unidad">
+                    <p>+ Unidad 3</p>
+                </div>
+                <div class="unidad">
+                    <p>+ Unidad 4</p>
+                </div>
+                <div class="unidad">
+                    <p>+ Unidad 5</p>
+                </div>
+                <div class="unidad">
+                    <p>+ Unidad 6</p>
+                </div>
             </div>
         </section>
 
-        <section class="info-curso">
-            <div class="informacion">
-                <img src="/images/reloj-circular.png" alt="">
+        <section class="informacion-materia">
+            <div class="info-materia">
+                <img src="/images/reloj-circular-unidades.png" alt="">
                 <h2>Dedicacion</h2>
                 <p>7hs semanales</p>
             </div>
 
-            <div class="informacion">
-                <img src="/images/videollamada.png" alt="">
+            <div class="info-materia">
+                <img src="/images/videollamada-unidades.png" alt="">
                 <h2>Clases</h2>
                 <p>Clases virtuales con contenido adicional</p>
             </div>
         </section>
-        
     </main>
 
+    <footer class="footer">
+        <p>&copy; CodiGo2025</p>
+    </footer>
 </body>
 </html>
