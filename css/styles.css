@@ -441,7 +441,7 @@ a {
     .cursos {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        height: 153vh;
+        height: 155vh;
     }
 
     .curso {
