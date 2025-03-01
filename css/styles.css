@@ -1,3 +1,6 @@
+/*---------------------*/
+/*Propiedades Generales*/
+/*---------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -35,6 +38,10 @@ a {
     color: black;
 }
 
+/*---------------------------------*/
+/*Composicion layout version mobile*/
+/*---------------------------------*/
+
 .grid-container > *{
     padding: 10px;
     text-align: center;
@@ -49,6 +56,10 @@ a {
     "main" 
     "footer";
 }
+
+/*--------------*/
+/*Estilos header*/
+/*--------------*/
 
 .header{
     grid-area: header;
@@ -66,6 +77,9 @@ a {
     margin-top: 20px;
 }
 
+/*---------------------------*/
+/*Estilos barra de navegacion*/
+/*---------------------------*/
 .navbar {
     grid-area: navbar;
     background-color: rgb(245, 245, 245);
@@ -89,6 +103,10 @@ a {
     grid-area: main;
     padding: 0;
 }
+
+/*------------*/
+/*Estilos hero*/
+/*------------*/
 
 .hero {
     display: flex;
@@ -120,6 +138,10 @@ a {
     margin-top: 55px;
     padding: 10px 15px;
 }
+
+/*-------------------------*/
+/*Estilos seccion de cursos*/
+/*-------------------------*/
 
 .cursos {
     display: flex;
@@ -210,6 +232,10 @@ a {
     url(/images/img6.jpg);
 }
 
+/*-----------------------------*/
+/*Estilos seccion de beneficios*/
+/*-----------------------------*/
+
 .nosotros {
     display: flex;
     flex-direction: column;
@@ -247,6 +273,10 @@ a {
 .info img {
     width: 15%;
 }
+
+/*------------------------------*/
+/*Estilos formulario de contacto*/
+/*------------------------------*/
 
 .contacto {
     display: flex;
@@ -298,6 +328,10 @@ a {
     align-items: center;
 }
 
+/*--------------*/
+/*Estilos footer*/
+/*--------------*/
+
 .footer {
     grid-area: footer;
     display: flex;
@@ -307,6 +341,11 @@ a {
     font-size: 0.7em;
     padding: 8px 5px;
 } 
+
+/*-----------------------------------*/
+/*Nuevos estilos para version desktop*/
+/*-----------------------------------*/
+
 
 @media (min-width: 1024px) {
     .grid-container {
@@ -430,7 +469,9 @@ a {
     }
 }
 
-/*pages*/
+/*-------------------------------------*/
+/*Estilos para las pages version mobile*/
+/*-------------------------------------*/
 
 .unidades {
     display: flex;
@@ -487,6 +528,10 @@ a {
 .info-materia img{
     width: 15%;
 }
+
+/*--------------------------------------*/
+/*Estilos para las pages version desktop*/
+/*--------------------------------------*/
 
 @media (min-width: 1024px) {
     .informacion-materia {
