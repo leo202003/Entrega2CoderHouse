@@ -447,13 +447,13 @@ a {
     .curso {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         height: 425px;
         width: 375px;
-        margin-left: 50px;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        place-self: center;
     }
 
     .curso p {
