@@ -184,7 +184,7 @@ a {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     ),
-    url(images/img7.jpg);
+    url(../images/img7.jpg);
 }
 
 .curso:nth-child(2) {
@@ -193,7 +193,7 @@ a {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     ),
-    url(images/premium_photo-1663040543387-cb7c78c4f012.jpg);
+    url(../images/premium_photo-1663040543387-cb7c78c4f012.jpg);
 }
 
 .curso:nth-child(3) {
@@ -202,7 +202,7 @@ a {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     ),
-    url(images/img3.webp);
+    url(../images/img3.webp);
 }
 
 .curso:nth-child(4) {
@@ -211,7 +211,7 @@ a {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     ),
-    url(images/img4.jpg);
+    url(../images/img4.jpg);
 }
 
 .curso:nth-child(5) {
@@ -220,7 +220,7 @@ a {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     ),
-    url(images/img5.jpg);
+    url(../images/img5.jpg);
 }
 
 .curso:last-child {
@@ -229,7 +229,7 @@ a {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     ),
-    url(/images/img6.jpg);
+    url(../images/img6.jpg);
 }
 
 /*-----------------------------*/
