@@ -159,7 +159,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 92%;
+    width: 96%;
     height: 22vh;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -448,8 +448,8 @@ a {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        height: 450px;
-        width: 400px;
+        height: 425px;
+        width: 375px;
         margin-left: 50px;
         background-position: center;
         background-size: cover;
